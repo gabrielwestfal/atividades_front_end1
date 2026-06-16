@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Catálogo de produtos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Catálogo de produtos da loja.</h1>
+    </header>
+
+    <div id="container">
+        <h3>Adicione novos produtos aqui.</h3>
+        <div id="entrada">
+            <div>
+                <label>Nome do produto:</label>
+                <input type="text" id="inNome">
+            </div>
+            <div>
+                <label>Preço:</label>
+                <input type="number" id="inPreco">
+            </div>
+            <div>
+                <label>Categoria do produto:</label>
+                <input type="text" id="inCategoria">
+            </div>
+        </div>
+        <div id="botoes">
+            <button id="btRegistrar">Registrar</button>
+            <button id="btDeletar">Deletar Produto</button>
+            <button id="btExportar">Exportar JSON</button>
+        </div>
+        <p id="outExportar"></p>
+    </div>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Categoria</td>
+                </tr>
+
+            </thead>
+            <tbody id="outSaida"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
